@@ -1,0 +1,13 @@
+# Firewall Setup for Apache
+To allow HTTP (port 80) traffic on Ubuntu, you can use UFW:
+
+1. Enable UFW:
+   sudo ufw enable
+
+2. Allow Apache Traffic:
+   sudo ufw allow 'Apache'
+
+3. To verify:
+   sudo ufw status
+
+This will ensure that traffic to your web server is allowed while blocking other unnecessary traffic.
